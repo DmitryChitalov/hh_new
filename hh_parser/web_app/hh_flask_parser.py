@@ -1,4 +1,4 @@
-
+from flask import Blueprint
 import sys
 import os
 import unittest
@@ -23,7 +23,12 @@ def create_app():
 
     return app
 
+main = Blueprint('main', __name__)
 
+
+@main.route("/")
+def home():
+    return render_template('index.html')
 # @app.errorhandler(404)
 # def not_found(e):
 #     return render_template("404.html")
