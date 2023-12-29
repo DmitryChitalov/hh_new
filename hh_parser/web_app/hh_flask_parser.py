@@ -24,9 +24,9 @@ def create_app():
     return app
 
 
-@app.errorhandler(404)
-def not_found(e):
-    return render_template("404.html")
+# @app.errorhandler(404)
+# def not_found(e):
+#     return render_template("404.html")
 
 # @app.teardown_appcontext
 # def shutdown_session(exception=None):
