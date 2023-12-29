@@ -21,6 +21,7 @@ parser_blueprint = Blueprint("flask_parser", __name__)
 
 @parser_blueprint.route("/")
 def root():
+    print("привет")
     """
        Функция обработки запроса к корневой странице
     :return Страница Index
