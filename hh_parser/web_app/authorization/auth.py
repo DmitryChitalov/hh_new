@@ -3,11 +3,18 @@ from datetime import datetime
 from hashlib import sha256, pbkdf2_hmac
 from os import urandom
 
+
+import sys
+import os
+import unittest
+import json
+sys.path.append(os.path.join(os.getcwd(), '..'))
+
 from flask import Blueprint, render_template, request, redirect, \
     flash, session
 
-from hh_parser.web_app.database import db_session
-from hh_parser.web_app.models import User
+from web_app.database import db_session
+from web_app.models import User
 
 auth_blueprint = Blueprint("auth", __name__)
 

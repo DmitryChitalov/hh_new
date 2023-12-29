@@ -6,13 +6,20 @@ import json
 
 import requests as req
 
-from hh_parser.web_app.models import Request
 
-import hh_parser.parser_app.hhrequest as hr
+import sys
+import os
+import unittest
+import json
+sys.path.append(os.path.join(os.getcwd(), '..'))
 
-import hh_parser.parser_app.hhparser_description as hp
-import hh_parser.parser_app.hhparser_key_skills as hk
-import hh_parser.parser_app.hhparser_salary as hs
+from web_app.models import Request
+
+import parser_app.hhrequest as hr
+
+import parser_app.hhparser_description as hp
+import parser_app.hhparser_key_skills as hk
+import parser_app.hhparser_salary as hs
 
 
 def read_requests(db_session):
