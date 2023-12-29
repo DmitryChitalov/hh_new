@@ -12,9 +12,9 @@ from flask import Blueprint, render_template, session, request, flash, redirect
 from flask_table import Table, Col, LinkCol
 from sqlalchemy import desc
 
-import parser_app.hhrequest as hr
-from web_app.database import db_session
-from web_app.models import Request
+import hh_parser.parser_app.hhrequest as hr
+from ..database import db_session
+from ..models import Request
 
 parser_blueprint = Blueprint("flask_parser", __name__)
 
