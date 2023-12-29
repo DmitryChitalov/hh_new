@@ -4,7 +4,7 @@ import os
 import unittest
 import json
 
-#sys.path.append(os.path.join(os.getcwd(), '..'))
+sys.path.append(os.path.join(os.getcwd(), '..'))
 # print(os.path.join(os.getcwd(), '..'))
 import multiprocessing as ml
 from parser_app import main as pr
