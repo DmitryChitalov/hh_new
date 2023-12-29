@@ -20,6 +20,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Дмитрий\Desktop\hh_new\hh_parser\web_app" />
+      <recent name="C:\Users\Дмитрий\Desktop\hh_new\hh_parser" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="hh_flask_parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hh_new" />

@@ -17,12 +17,23 @@ app.config.from_object(__name__)
 main = Blueprint('main', __name__)
 
 
-@main.route("/")
-def home():
-    return render_template('index.html')
 
+def create_app():
+    from web_app.flask_parser.flask_parser import parser_blueprint
+    from web_app.authorization.auth import auth_blueprint
+    app.register_blueprint(parser_blueprint)
+    app.register_blueprint(auth_blueprint)
 
+    return app
 
+@app.route("/")
+def root():
+    print("привет")
+    """
+       Функция обработки запроса к корневой странице
+    :return Страница Index
+    """
+    return render_template("index.html")
 # @app.errorhandler(404)
 # def not_found(e):
 #     return render_template("404.html")
