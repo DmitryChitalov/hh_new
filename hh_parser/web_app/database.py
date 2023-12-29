@@ -9,7 +9,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-from hh_flask_parser import app
+#from hh_flask_parser import app
 
 config = cfg.ConfigParser()
 config.read("../web_app/hh_config.ini")
@@ -20,9 +20,9 @@ Base = declarative_base()
 Base.metadata.create_all(bind=engine)
 
 
-@app.teardown_appcontext
-def shutdown_session(exception=None):
-    db_session.close()
+#@app.teardown_appcontext
+#def shutdown_session(exception=None):
+    #db_session.close()
 
 
 def create_db():

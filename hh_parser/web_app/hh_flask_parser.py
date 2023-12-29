@@ -28,6 +28,10 @@ def create_app():
 def not_found(e):
     return render_template("404.html")
 
+# @app.teardown_appcontext
+# def shutdown_session(exception=None):
+#     db_session.close()
+
 if __name__ == "__main__":
     # Создать приложение Flask
     app = create_app()
